@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Nik remote V1-Nik remote.iml" filepath="$PROJECT_DIR$/Nik remote V1-Nik remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nik remote/Nik remote-Nik remote.iml" filepath="$PROJECT_DIR$/Nik remote/Nik remote-Nik remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usbserial/usbserial.iml" filepath="$PROJECT_DIR$/usbserial/usbserial.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+
+    defaultConfig {
+        applicationId "com.felhr.serialportexample"
+        minSdkVersion 19
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+        versionName project.VERSION_NAME
+        versionCode Integer.parseInt(project.VERSION_CODE)
+    }
+
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:23.1.1'
+    implementation 'com.android.support:appcompat-v7:23.1.1'
+    implementation 'com.android.support:design:23.1.1'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
+
+    implementation project(':usbserial')
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'pl.pawelkleczkowski.customgauge:CustomGauge:1.0.4'
+
+    implementation 'io.github.controlwear:virtualjoystick:1.10.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}
